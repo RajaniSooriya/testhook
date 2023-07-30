@@ -7,7 +7,7 @@ type MsgRecord record {
 
 service http:Service / on new http:Listener(9090) {
  resource function post slacks(@http:Payload MsgRecord msgRecord) returns string|error { 
-string webHook_Url = "https://hooks.slack.com/services/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";
+string webHook_Url = "https://hooks.slack.com/services/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";
 
  json slackMsg = {
  "text": msgRecord.message
